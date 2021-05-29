@@ -37,7 +37,7 @@ Podemos acortar estos dos paso con el comando de :
         # ó
         git commit -am "Descriptive text for this commit"
 
-<>git push: Este comando se utiliza para subir nuestros commits al repositorio remoto y compartirlos con el resto del equipo. Su sintaxis es:
+<>git push: Este comando se utiliza para subir nuestros commits al repositorio remoto y compartirlos con el resto del equipo. Dicho de otra forma (actualizar el codigo que tenemos editado y actulizarlo en github) Su sintaxis es:
 
         # Push de tus commits la primera vez, si quieres enviar tu rama al repositorio remoto
         git push -u origin [branch_name]
@@ -46,6 +46,12 @@ Podemos acortar estos dos paso con el comando de :
         git push [remote] [branch_name]
 
 <> git pull : con este comando traemos informacion actualizada externa(github) es decir que si hacemos cambio desde el edito de github y para que este cambio se refleje en nuestro codigo o en nuestro editor debemos de hacer el comando de git pull:
+        
         git pull 
 
+<> git tag: Los tags o etiquetas permiten especificar puntos o commits específicos dentro de un repositorios que son considerados importantes. Su uso más común es el determinar los puntos en los que un proyecto se considera una nueva versión o release. Por esta razón el nombre de los tags suelen comenzar con la letra v seguido por el número de versión.
+
+        git tag <nombre>
+        o tambien
+        git tag -a <nombre> -m "<descripcion>"
 
