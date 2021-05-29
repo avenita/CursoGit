@@ -1,0 +1,51 @@
+                COMANDOS BASICOS
+
+<> git init: Este es para iniciar el proyecto en git
+        git init
+
+<> git add: Este comando es para poner a la escucha a git. Y que git este trabajando, este variara segun el archivo que le indiquemos.
+
+        # Añadir todos los archivos
+        git add .
+
+        # Añadir un archivo concreto
+        git add [filename]
+
+        # Añadir todos los archivos omitiendo los nuevos
+        git add --all
+
+        # Añadir todos los archivos con una extensión específica
+        git add *.txt
+
+        # Añadir todos los archivos dentro de un directorio
+        git add docs/
+
+        # Añadir todos los archivos dentro de un directorio y con una extensión específica
+        git add docs/*.txt
+
+<> git status -s: este comando es para ver que archivos estan a la escucha de git como tambien aquellos que no 
+        git status -s
+
+<> git commit: este comando captura una instantánea de los cambios preparados en ese momento del proyecto (los que hayamos añadido con git add anteriormente). Las instantáneas confirmadas pueden considerarse como versiones «seguras» de un proyecto: Git no las cambiará nunca a no ser que se lo pidas expresamente.
+
+        git commit -m "Descripcion de los cambios"
+
+nota: Para ejecutar correctamente est comando antes debemos de ponerlo listo con el comando de add(git add .)
+Podemos acortar estos dos paso con el comando de :
+        
+        git commit -a -m "Descriptive text for this commit"
+        # ó
+        git commit -am "Descriptive text for this commit"
+
+<>git push: Este comando se utiliza para subir nuestros commits al repositorio remoto y compartirlos con el resto del equipo. Su sintaxis es:
+
+        # Push de tus commits la primera vez, si quieres enviar tu rama al repositorio remoto
+        git push -u origin [branch_name]
+
+        # Push "normal"
+        git push [remote] [branch_name]
+
+<> git pull : con este comando traemos informacion actualizada externa(github) es decir que si hacemos cambio desde el edito de github y para que este cambio se refleje en nuestro codigo o en nuestro editor debemos de hacer el comando de git pull:
+        git pull 
+
+
